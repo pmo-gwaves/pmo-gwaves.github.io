@@ -3,7 +3,7 @@ from pathlib import Path
 from urllib.parse import quote
 import json, shutil
 ROOT = Path(__file__).resolve().parents[1]
-COURSES = ('01-introduction', '02-parameter-estimation', '03-population', '04-searches')
+COURSES = ('01-introduction', '02-parameter-estimation', '03-population', '04-searches', '05-electromagnetic-counterparts')
 def build(output=None):
     output = Path(output) if output else ROOT / '_site'
     if output.exists(): shutil.rmtree(output)
