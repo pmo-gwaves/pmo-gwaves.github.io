@@ -1,0 +1,1 @@
+const course=document.getElementById('course');course.addEventListener('change',()=>{document.getElementById('upload-link').href='https://github.com/pmo-gwaves/pmo-gwaves.github.io/upload/main/slides/'+encodeURIComponent(course.value);});
