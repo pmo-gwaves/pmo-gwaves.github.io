@@ -1,0 +1,39 @@
+body {background:#f8f7f5;color:#282336}
+header {background:#191625;border:0}
+.nav {max-width:1180px;min-height:68px}
+.nav a {color:#faf6ff}
+.nav nav a:hover {color:#f9d49a}
+main {max-width:none;padding:0}
+.poster {position:relative;color:white;background:#171326 url("sky.jpg") center 48% / cover no-repeat;isolation:isolate}
+.poster::before {content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(95deg,rgba(13,11,28,.94),rgba(23,14,32,.68) 46%,rgba(15,11,25,.12))}
+.poster-inner {max-width:1180px;margin:auto;padding:68px 24px 64px}
+h1,h2 {font-family:"Songti SC","Noto Serif CJK SC",serif}
+h1 {font-size:clamp(38px,5.4vw,74px);line-height:1.25;font-weight:600;letter-spacing:.06em}
+.meeting-info {margin-top:28px;border-left:2px solid #eab868;padding-left:16px}
+.meeting-info p {display:flex;align-items:center;gap:10px;margin:8px 0}
+.info-badge {display:grid;place-items:center;flex:none;width:28px;height:28px;border-radius:7px;background:#342934;color:#f4d097;border:1px solid #a48b73}
+.info-badge svg {width:17px;height:17px}
+.meeting-info a {color:white;text-decoration:underline;text-underline-offset:4px}
+.credit {position:absolute;right:12px;bottom:9px;color:white;background:#211a27c9;padding:2px 8px;font-size:12px}
+article {max-width:1180px;margin:auto;padding:16px 24px 64px;display:grid;grid-template-columns:1fr 1fr;column-gap:7%}
+article section {border-top:1px solid #bca996;padding:20px 0 0;margin-top:35px;scroll-margin-top:20px}
+h2 {font-size:30px;color:#44314c}
+ol {padding-left:1.6em}
+li {padding:4px 0}
+li::marker {color:#80592e}
+#program {grid-column:1 / -1}
+.days {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:start}
+.days caption {text-align:left;padding:16px 12px;background:#ece7ee;color:#44314c}
+.days caption strong {font-size:1.2rem}
+.days td:first-child {width:8em;white-space:nowrap;font-variant-numeric:tabular-nums}
+.days .break {color:#645d66;background:#f0edeb}
+.days .discussion {color:#48314b;background:#eee7ef}
+@media(max-width:850px){.days {grid-template-columns:1fr}}
+@media(max-width:700px){
+  .nav {align-items:flex-start;flex-direction:column;gap:8px}
+  nav {gap:15px}
+  .poster-inner {padding:45px 22px 55px}
+  article {grid-template-columns:1fr}
+}
+
+.days .session th {text-align:left; font-size:0.95rem; font-weight:600; color:#44314c; background:#f1edf3;}
