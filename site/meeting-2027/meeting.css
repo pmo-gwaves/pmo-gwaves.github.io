@@ -21,7 +21,10 @@ h2 {font-size:30px;color:#44314c}
 ol {padding-left:1.6em}
 li {padding:4px 0}
 li::marker {color:#80592e}
-#program {grid-column:1 / -1}
+#program, #people {grid-column:1 / -1}
+#people h2 {font-size:20px;margin-bottom:8px}
+#people ul {list-style:none;margin:0;padding:0;font-size:14px;color:#57525a}
+#people li {padding:1px 0}
 .days {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:start}
 .days caption {text-align:left;padding:16px 12px;background:#ece7ee;color:#44314c}
 .days caption strong {font-size:1.2rem}
